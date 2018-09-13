@@ -3,12 +3,14 @@ Calculates MSE and PSNR values for the given two .yuv video sequences
 
 THIS PROGRAM CALCULATES MSE AND PSNR VALUES OF TWO .YUV VIDEO SEQUENCES
 
+Instruction for Use:-
+
 For windows, use calc_mse_psnr1.exe.
 For linux, use calc_mse_psnr
 
 Usage:
-Windows: calc_mse_psnr1.exe -r <reference yuv filename> -i <input yuv file name> -size 352x288 -noframes 150
-Linux: ./calc_mse_psnr -r <reference yuv filename> -i <input yuv file name> -size 352x288 -noframes 150
+Windows: calc_mse_psnr1.exe -r [reference yuv filename] -i [input yuv file name] -size 352x288 -noframes 150
+Linux: ./calc_mse_psnr -r [reference yuv filename] -i [input yuv file name] -size 352x288 -noframes 150
   
 Examples:
 Windows: calc_mse_psnr1.exe -r akiyo_cif.yuv -i akiyo_rec0.yuv -size 352x288 -noframes 150
