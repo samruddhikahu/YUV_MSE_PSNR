@@ -7,15 +7,19 @@ For windows, use calc_mse_psnr1.exe.
 For linux, use calc_mse_psnr
 
 Usage:
+Windows: calc_mse_psnr1.exe -r <reference yuv filename> -i <input yuv file name> -size 352x288 -noframes 150
+Linux: ./calc_mse_psnr -r <reference yuv filename> -i <input yuv file name> -size 352x288 -noframes 150
+  
+Examples:
 Windows: calc_mse_psnr1.exe -r akiyo_cif.yuv -i akiyo_rec0.yuv -size 352x288 -noframes 150
-Linux: ./calc_mse_psnr -r akiyo_cif.yuv -i akiyo_rec0.yuv -size 352x288 -noframes 150
+Linux: ./calc_mse_psnr -r akiyo_cif.yuv -i akiyo_rec0.yuv -size 352x288 -noframes 150 
 
 1. -r:
 This parameter is used to specify the reference yuv video file.
 The filename after -r is the reference yuv video.
 
 2. -i:
-This parameter is used to specify the input yuv video file whose MSE and PSNR is to be calculated using the reference video.
+This parameter is used to specify the input yuv video file whose MSE and PSNR is to be calculated compared to the reference video.
 The filename after -i is the input yuv video filename.
 
 3. -size:
